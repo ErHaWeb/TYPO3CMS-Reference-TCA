@@ -28,8 +28,11 @@
             The `title` attribute of the link
 
         rel
-            The link relationship. Only available for RTE enabled fields and if `buttons.link.relAttribute.enabled`
-            is enabled in the RTE YAML configuration.
+            The link relationship.
+            For TCA type :php:`link` fields, this option is available in the regular link browser
+            when :php:`rel` is included in :php:`allowedOptions`.
+            For RTE-enabled text fields, showing this option is additionally controlled by
+            :yaml:`buttons.link.relAttribute.enabled` in the RTE YAML configuration.
 
         ..  code-block:: php
 
